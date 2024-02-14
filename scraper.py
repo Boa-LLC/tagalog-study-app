@@ -132,7 +132,7 @@ while True:
   page_index += 1
 
 print('Checking', len(worker_pool), 'page workers...')
-
+count = 1
 for worker in worker_pool:
 
   try:
@@ -158,7 +158,7 @@ for worker in worker_pool:
     words = raw.findAll('div', class_='word-group')
     # print("==========================================================================\n",words)
       
-    count = 1
+
     for word in words:
       # only gets words up to 15 characters length and...
       # print("+++++++++++++++++++",word.find('a').next)
